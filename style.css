@@ -1,7 +1,19 @@
 @font-face {
-  font-family: Circular;
-  src: url('font/Circular.eot');
-  src: url('font/Circular.eot') format('embedded-opentype'), url('font/Circular.woff') format('woff'), url('font/Circular.ttf') format('truetype'), url('font/Circular.svg#Circular') format('svg');
+    font-family: PSLKittithadaProRegular;
+    src: url('font/pslkittithadapro.eot');
+    src: url('font/pslkittithadapro.eot') format('embedded-opentype'),
+         url('font/pslkittithadapro.woff') format('woff'),
+         url('font/pslkittithadapro.ttf') format('truetype'),
+         url('font/pslkittithadapro.svg#PSLKittithadaProRegular') format('svg');
+}
+
+@font-face {
+    font-family: PSLKittithadaItalic;
+    src: url('font/pslkittithada-italic.eot');
+    src: url('font/pslkittithada-italic.eot') format('embedded-opentype'),
+         url('font/pslkittithada-italic.woff') format('woff'),
+         url('font/pslkittithada-italic.ttf') format('truetype'),
+         url('font/pslkittithada-italic.svg#PSLKittithadaItalic') format('svg');
 }
 
 body {
@@ -9,7 +21,7 @@ body {
 }
 
 body, input, select, button {
-	font-family: Circular;
+	font-family: PSLKittithadaProRegular;
 }
 
 #page-frame {
@@ -24,7 +36,7 @@ body, input, select, button {
 #blursheet {
 	background: rgba(0, 0, 0, 0.7);
 	position: absolute;
-	height: 868px;
+	height: 1124px;
 	z-index: 1;
 	width: 1024px;
 	
@@ -35,13 +47,13 @@ body, input, select, button {
 	color: #FFFFFF;
 	
 	z-index: 2;
-	position: absolute;
+	position: fixed;
 	
-	width: 440px;
-	height: 184px;
+	width: 596px;
+	height: 230px;
 	
-	left:34%;
-	margin-top: 150px;
+	left:29%;
+	margin-top: 194px;
 	
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 2px
@@ -58,10 +70,12 @@ body, input, select, button {
 }
 
 .text-box-alert {
-	line-height: 20px;
-	font-size: 24px;
-	margin-top: 30px;
+	line-height: 24px;
+	font-size: 28px;
+	margin-top: 38px;
 	text-align: center;
+	font-weight: bold;
+	font-style: italic;
 }
 
 #benz-image {
@@ -83,12 +97,12 @@ body, input, select, button {
 	background-image: url("img/bg-mid1.png");
 }
 form {
-	width: 270px;
+	width: 324px;
 	background-color: black;
 
 	float: right;
 	position: relative;
-	right: 130px;
+	right: 182px;
 }
 form div {
 	text-align: right;
@@ -98,7 +112,8 @@ form .text, form input, form select {
 	display: inline-block;
 }
 form .text {
-	font-size: 19px;
+	font-size: 22px;
+	font-weight: bold;
 	color: #AAA;
 	letter-spacing: 1.2px;
 
@@ -110,16 +125,17 @@ form .text.type {
 	right: 4px;
 }
 form input[type="text"] {
-	width: 162px;
-	height: 13px;
+	width: 212px;
+	height: 16px;
 
 	border: 1px solid #AAA;
 
-	font-size: 16px;
+	font-size: 18px;
 }
 form select {
-	width: 164px;
+	width: 214px;
 	cursor: pointer;
+	font-size: 18px;
 }
 form input[type="button"] {
 	background-color: #666;
@@ -128,13 +144,14 @@ form input[type="button"] {
 	border-right-color: #555;
 
 	color: white;
-	font-size: 19px;
+	font-size: 22px;
 	letter-spacing: 1.2px;
 
-	padding: 4px 12px 2px;
+	padding: 0px 16px;
 
-	float: right;
-	margin-top: 4px;
+	/*float: right;*/
+	margin-top: 8px;
+	margin-left: 164px;
 
 	cursor: pointer;
 }
@@ -159,13 +176,13 @@ form input[type="button"] {
 	margin-left: 42px;
 }
 #googleplay, #appstore {
-	height: 37px;
+	height: 38px;
 	float: left;
 	margin-left: 6px;
 	cursor: pointer;
 }
 #googleplay {
-	width: 38px;
+	width: 39px;
 	background-image: url("img/bt-googleplay.png");
 }
 #appstore {
@@ -175,10 +192,12 @@ form input[type="button"] {
 #lower a {
 	width: 176px;
 	float: right;
-	margin-top: 58px;
-	margin-right: 36px;
-	font-size: 24px;
+	margin-top: 51px;
+	margin-right: 30px;
+	font-size: 26px;
 	letter-spacing: 0.6px;
+	font-family: PSLKittithadaItalic;
+	font-weight: bold;
 }
 a:link, a:visited, a:active {
 	color: white;
@@ -187,4 +206,9 @@ a:link, a:visited, a:active {
 }
 a:hover {
 	color: #CCC;
+}
+
+#age {
+	width: 108px;
+	margin-right: 106px;
 }

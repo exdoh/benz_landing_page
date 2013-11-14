@@ -23,7 +23,7 @@ Class Sms{
 			$sender = "mySTAR";
 			$ScheduledDelivery = '';
 
-			$message = "Thank you for registration. Please keep the SMS for lucky draw and more privilege while financing Mercedes-Benz via mySTAR. For more info. contact 02 614 8500.";
+			$message = "Thank you for registration. Please keep this SMS for lucky draw and more privileges while financing Mercedes-Benz via mySTAR. For more info. contact 026148500.";
 			
 			$url = "http://www.thaibulksms.com/sms_api.php";
 			$data_string = "username=$username&password=$password&msisdn=$msisdn&message=$message&sender=$sender&ScheduledDelivery=$ScheduledDelivery";

@@ -25,12 +25,50 @@ $db->addfield("ads");
 $db->table = "users";
 
 $db1 = new dbi();
+$db1->clear();
+$db1->addfield("id");
+$db1->addfield("name");
+$db1->addfield("count");
+$db1->table = "ads";
 ?>
+
+<h2>Ads</h2>
+
+<table border=1>
+	<tr>
+		<td width=200 align="center">ลำดับ</td>
+		<td width=200 align="center">โฆษณษา</td>
+		<td width=200 align="center">จำนวนคนที่เข้าจากช่องทางนี้</td>
+	</tr>
+<?php
+if ($db1->query()) {
+	$i = 0;
+	while ($row1 = $db1->getrow()) {
+		$i++;
+?>
+	<tr>
+		<td><?php echo $i; ?></td>
+		<td width=200><?php echo $row1["name"]; ?></td>
+		<td width=200><?php echo $row1["count"]; ?></td>
+	</tr>
+<?php 
+	}
+}
+?>
+</table>
 
 <h2>Register</h2>
 
 <table border=1>
-
+	<tr>
+		<td align="center">ลำดับ</td>
+		<td width=200 align="center">ชื่อ</td>
+		<td width=200 align="center">ช่วงอายุ</td>
+		<td width=200 align="center">เบอร์โทรศัพท์</td>
+		<td width=200 align="center">อีเมล์</td>
+		<td width=200 align="center">รุ่นรถ</td>
+		<td width=200 align="center">โฆษณา</td>
+	</tr>
 <?php
 if ($db->query()) {
 	$i = 0;

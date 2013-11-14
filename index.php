@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Mercedes Benz</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
