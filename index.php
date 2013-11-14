@@ -48,12 +48,13 @@
 							<option value="1">The A-Class</option>
 							<option value="2">The B-Class</option>
 							<option value="3">The CLA-Class</option>
-							<option value="4">The SLK-Class</option>
-							<option value="5">The E-Class</option>
-							<option value="6">The CLS-Class</option>
-							<option value="7">The S-Class</option>
-							<option value="8">The Vito/The Visno</option>
-							<option value="9">Coupe</option>
+							<option value="4">The C-Class</option>
+							<option value="5">The SLK-Class</option>
+							<option value="6">The E-Class</option>
+							<option value="7">The CLS-Class</option>
+							<option value="8">The S-Class</option>
+							<option value="9">The Vito/The Visno</option>
+							<option value="10">Coupe</option>
 							<option value="0">Others</option>
 						</select>
 					</div>

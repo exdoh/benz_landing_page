@@ -13,7 +13,7 @@ body, input, select, button {
 }
 
 #page-frame {
-	width: 790px;
+	width: 1024px;
 	margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ body, input, select, button {
 	position: absolute;
 	height: 868px;
 	z-index: 1;
-	width: 790px;
+	width: 1024px;
 	
 }
 
@@ -65,8 +65,8 @@ body, input, select, button {
 }
 
 #benz-image {
-	width: 308px;
-	height: 594px;
+	width: 399px;
+	height: 784px;
 	background-image: url("img/benz.png");
 	
 	position: fixed;
@@ -74,12 +74,12 @@ body, input, select, button {
 }
 
 #upper {
-	height: 296px;
+	height: 384px;
 	background-image: url("img/bg-upper.png");
 }
 
 #mid-1 {
-	height: 186px;
+	height: 241px;
 	background-image: url("img/bg-mid1.png");
 }
 form {
@@ -140,16 +140,16 @@ form input[type="button"] {
 }
 
 #mid-2 {
-	height: 302px;
+	height: 391px;
 	background-image: url("img/bg-mid2.png");
 }
 
 #lower {
-	height: 84px;
+	height: 108px;
 	background-image: url("img/bg-lower.png");
 }
 #lower > div {
-	width: 440px;
+	width: 560px;
 	float: right;
 	overflow: hidden;
 }
@@ -159,25 +159,25 @@ form input[type="button"] {
 	margin-left: 42px;
 }
 #googleplay, #appstore {
-	height: 30px;
+	height: 37px;
 	float: left;
 	margin-left: 6px;
 	cursor: pointer;
 }
 #googleplay {
-	width: 30px;
+	width: 38px;
 	background-image: url("img/bt-googleplay.png");
 }
 #appstore {
-	width: 86px;
+	width: 112px;
 	background-image: url("img/bt-appstore.png");
 }
 #lower a {
-	width: 110px;
+	width: 176px;
 	float: right;
-	margin-top: 46px;
-	margin-right: 34px;
-	font-size: 22px;
+	margin-top: 58px;
+	margin-right: 36px;
+	font-size: 24px;
 	letter-spacing: 0.6px;
 }
 a:link, a:visited, a:active {

@@ -9,7 +9,7 @@
 require_once "lib/dbi.class.php";
 
 $age = array('','20-30 ปี','31-40 ปี','41-50 ปี','51-60 ปี','60 ปีขึ้นไป');
-$car_type = array('','The A-Class','The B-Class','The CLA-Class','The SLK-Class','The E-Class','The CLS-Class','The S-Class','The Vito/The Visno','Coupe','Others');
+$car_type = array('','The A-Class','The B-Class','The CLA-Class','The C-Class','The SLK-Class','The E-Class','The CLS-Class','The S-Class','The Vito/The Visno','Coupe','Others');
 $ads = array('','Facebook Ads','GDN','Adwords','Mobile Ads');
 
 $db = new dbi();
