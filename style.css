@@ -1,0 +1,190 @@
+@font-face {
+  font-family: Circular;
+  src: url('font/Circular.eot');
+  src: url('font/Circular.eot') format('embedded-opentype'), url('font/Circular.woff') format('woff'), url('font/Circular.ttf') format('truetype'), url('font/Circular.svg#Circular') format('svg');
+}
+
+body {
+	margin: 0 auto;	
+}
+
+body, input, select, button {
+	font-family: Circular;
+}
+
+#page-frame {
+	width: 790px;
+	margin: 0 auto;
+}
+
+#page-frame > div {
+	/*width: 790px;*/
+}
+
+#blursheet {
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	height: 868px;
+	z-index: 1;
+	width: 790px;
+	
+}
+
+#box-alert {
+	background: #676d75;
+	color: #FFFFFF;
+	
+	z-index: 2;
+	position: absolute;
+	
+	width: 440px;
+	height: 184px;
+	
+	left:34%;
+	margin-top: 150px;
+	
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px
+}
+
+#button-close {
+	float: right;
+	background-image: url("img/button-close.png");
+	width: 21px;
+	height: 18px;
+	margin: 2px;
+	
+	cursor: pointer;
+}
+
+.text-box-alert {
+	line-height: 20px;
+	font-size: 24px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#benz-image {
+	width: 308px;
+	height: 594px;
+	background-image: url("img/benz.png");
+	
+	position: fixed;
+	margin: 0 0;
+}
+
+#upper {
+	height: 296px;
+	background-image: url("img/bg-upper.png");
+}
+
+#mid-1 {
+	height: 186px;
+	background-image: url("img/bg-mid1.png");
+}
+form {
+	width: 270px;
+	background-color: black;
+
+	float: right;
+	position: relative;
+	right: 130px;
+}
+form div {
+	text-align: right;
+	margin-bottom: 6px;
+}
+form .text, form input, form select {
+	display: inline-block;
+}
+form .text {
+	font-size: 19px;
+	color: #AAA;
+	letter-spacing: 1.2px;
+
+	position: relative;
+	top: 2px;
+	right: 8px;
+}
+form .text.type {
+	right: 4px;
+}
+form input[type="text"] {
+	width: 162px;
+	height: 13px;
+
+	border: 1px solid #AAA;
+
+	font-size: 16px;
+}
+form select {
+	width: 164px;
+	cursor: pointer;
+}
+form input[type="button"] {
+	background-color: #666;
+	border: 2px solid #888;
+	border-bottom-color: #555;
+	border-right-color: #555;
+
+	color: white;
+	font-size: 19px;
+	letter-spacing: 1.2px;
+
+	padding: 4px 12px 2px;
+
+	float: right;
+	margin-top: 4px;
+
+	cursor: pointer;
+}
+
+#mid-2 {
+	height: 302px;
+	background-image: url("img/bg-mid2.png");
+}
+
+#lower {
+	height: 84px;
+	background-image: url("img/bg-lower.png");
+}
+#lower > div {
+	width: 440px;
+	float: right;
+	overflow: hidden;
+}
+#lower .apps {
+	overflow: hidden;
+	float: left;
+	margin-left: 42px;
+}
+#googleplay, #appstore {
+	height: 30px;
+	float: left;
+	margin-left: 6px;
+	cursor: pointer;
+}
+#googleplay {
+	width: 30px;
+	background-image: url("img/bt-googleplay.png");
+}
+#appstore {
+	width: 86px;
+	background-image: url("img/bt-appstore.png");
+}
+#lower a {
+	width: 110px;
+	float: right;
+	margin-top: 46px;
+	margin-right: 34px;
+	font-size: 22px;
+	letter-spacing: 0.6px;
+}
+a:link, a:visited, a:active {
+	color: white;
+	font-style: italic;
+	text-decoration: none;
+}
+a:hover {
+	color: #CCC;
+}
