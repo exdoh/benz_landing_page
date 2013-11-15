@@ -97,7 +97,7 @@ body, input, select, button {
 	background-image: url("img/bg-mid1.png");
 }
 form {
-	width: 324px;
+	width: 334px;
 	background-color: black;
 
 	float: right;
@@ -131,6 +131,7 @@ form input[type="text"] {
 	border: 1px solid #AAA;
 
 	font-size: 18px;
+	font-weight: bold;
 }
 form select {
 	width: 214px;
