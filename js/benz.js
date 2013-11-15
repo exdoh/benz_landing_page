@@ -11,6 +11,7 @@ benz.prototype.reset = function()
     $('#appstore').attr('onclick','window.open("https://itunes.apple.com/th/app/mymbfs-thailand/id587743627?mt=8", "blank");');
 
     $('#button-close').attr('onclick','benz.close_alert_box();');
+    $('#button-close-error').attr('onclick','benz.close_alert_box_error();');
 }
 
 //////Add Data///////
@@ -28,15 +29,21 @@ benz.prototype.count_ads = function(){
 benz.prototype.add_data_user = function(){
 	if(jQuery('#name').val() == '' || jQuery('#age').val() == '' || jQuery('#tel').val() == '' || jQuery('#email').val() == '' || jQuery('#car_type').val() == '')
 	{
-		alert('กรุณากรอกข้อมูลให้ครบ');
+		$('#text-box-alert-error').html('กรุณากรอกข้อมูลให้ครบ');
+		$('#blursheet').show();
+        $('#box-alert-error').show();
 		return false;
 	} else {
 		if(benz.validateMobileNumber(jQuery('#tel').val()) == false) {
-			alert('คุณกรอกหมายเลขโทรศัพท์ไม่ถูกต้อง');
+			$('#text-box-alert-error').html('คุณกรอกหมายเลขโทรศัพท์ไม่ถูกต้อง');
+            $('#blursheet').show();
+            $('#box-alert-error').show();
 			return false;
 		}
 		if(benz.validateEmail(jQuery('#email').val()) == false) {
-			alert('คุณกรอกอีเมล์ไม่ถูกต้อง');
+			$('#text-box-alert-error').html('คุณกรอกอีเมล์ไม่ถูกต้อง');
+            $('#blursheet').show();
+            $('#box-alert-error').show();
 			return false;
 		}
 		
@@ -53,13 +60,27 @@ benz.prototype.add_data_user = function(){
     };
     
 	ajax(service_path+'/users.php', param, 'text', '', function(data){
+		
+		var sta = JSON.parse(data).status;
+		
 		$('#blursheet').show();
-		$('#box-alert').show();
+		
+		if(sta == 0)
+		{
+		  $('#text-box-alert-error').html('หมายเลขนี้ถูกลงทะเบียนเรียบร้อยแล้วค่ะ');
+          $('#box-alert-error').show(); 
+		} else {
+		  $('#box-alert').show();   
+		}
  	});
 }
 //////Add Data///////
 
 //////Action///////
+benz.prototype.close_alert_box_error = function(){
+    $('#blursheet').hide();
+    $('#box-alert-error').hide();
+}
 benz.prototype.close_alert_box = function(){
     window.location="http://www.mercedes-benz.co.th/content/thailand/mpc/mpc_thailand_website/thng/home_mpc/passengercars/home/financialservices/leasing/my_star.html";
 }

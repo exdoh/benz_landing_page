@@ -59,22 +59,43 @@ Class Users{
 			 $db = new dbi();
 			 $s = new sms();
 			 
-			 $db->clear();
-			 $db->dict["name"] = $name;
-	         $db->dict["age"] = $age;
-			 $db->dict["mobile"] = $mobile;
-	         $db->dict["email"] = $email;
-			 $db->dict["car_type"] = $car_type;
-			 $db->dict["ads"] = $ads;
-			 $db->dict["create_at"] = date("Y-m-d H:i:s");
-	   
-			 $db->table = "users";
-
-        	 $id = $db->insertiden(); 
+			 $check = 0;
 			 
-			 $s->sendSMS($mobile);
-			  
-			 echo '{"status":"add data complete"}';	
+			 $db->clear();
+			 $db->addfield("id");
+		     $db->addcon("mobile", "=", $mobile);
+		     $db->table="users";
+			 
+			 //echo $db->query2();exit();
+			 if ($db->query()) {
+	             if ($row = $db->getrow()) {
+	             	 $check = 1;
+	             }
+			 }
+			 
+			 if($check == 0)
+			 { 
+				 $db->clear();
+				 $db->dict["name"] = $name;
+		         $db->dict["age"] = $age;
+				 $db->dict["mobile"] = $mobile;
+		         $db->dict["email"] = $email;
+				 $db->dict["car_type"] = $car_type;
+				 $db->dict["ads"] = $ads;
+				 $db->dict["create_at"] = date("Y-m-d H:i:s");
+		   
+				 $db->table = "users";
+	
+	        	 $id = $db->insertiden(); 
+				 
+				 $s->sendSMS($mobile);
+				 
+				 $db->close(); 
+				 echo '{"status":"add data complete"}';	
+			 } else {
+			 	 $db->close();
+			 	 echo '{"status":"0"}';	
+			 }
 	 }
 }
 ?>

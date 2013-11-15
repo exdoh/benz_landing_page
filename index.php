@@ -11,11 +11,15 @@
 	<body>
 		<div id="page-frame">
 			<div id="blursheet" style="display: none;"></div>
-			<div id="box-alert" style="display: none;">
-				<div id="button-close"></div>
+			<div id="box-alert" class="box-alert" style="display: none;">
+				<div id="button-close" class="button-close"></div>
 				<div class="text-box-alert">Thanks you for Registration.</div>
 				<div class="text-box-alert">You will receive confirmmation SMS shortly.</div>
 				<div class="text-box-alert">Call for detail  02-530-9433</div>
+			</div>
+			<div id="box-alert-error" class="box-alert" style="display: none;">
+				<div id="button-close-error" class="button-close"></div>
+				<div id="text-box-alert-error" class="text-box-alert">Thanks you for Registration.</div>
 			</div>
 			<div id="benz-image"></div>
 			

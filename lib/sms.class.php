@@ -36,7 +36,7 @@ Class Sms{
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 			curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 15);
 			$result = curl_exec ($ch);
-			echo 'test sms :'.$result;
+			//echo 'test sms :'.$result;
 			curl_close ($ch);
 	 }
 }

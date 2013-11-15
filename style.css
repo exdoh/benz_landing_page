@@ -43,23 +43,33 @@ body, input, select, button {
 }
 
 #box-alert {
+	width: 596px;
+	height: 230px;
+	
+	left:29%;
+	margin-top: 194px;
+}
+
+#box-alert-error {
+	width: 360px;
+	height: 142px;
+	
+	left:38%;
+	margin-top: 224px;
+}
+
+.box-alert {
 	background: #676d75;
 	color: #FFFFFF;
 	
 	z-index: 2;
 	position: fixed;
 	
-	width: 596px;
-	height: 230px;
-	
-	left:29%;
-	margin-top: 194px;
-	
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 2px
 }
 
-#button-close {
+.button-close {
 	float: right;
 	background-image: url("img/button-close.png");
 	width: 21px;
@@ -67,6 +77,10 @@ body, input, select, button {
 	margin: 2px;
 	
 	cursor: pointer;
+}
+
+#text-box-alert-error {
+	margin-top: 56px;
 }
 
 .text-box-alert {
