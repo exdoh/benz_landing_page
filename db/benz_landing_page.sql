@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.9
+-- version 3.5.7
 -- http://www.phpmyadmin.net
 --
--- Host: freehapdb.clkpxvvhqb7t.us-west-2.rds.amazonaws.com
--- Generation Time: Nov 11, 2013 at 04:17 PM
--- Server version: 5.5.33
--- PHP Version: 5.3.2-1ubuntu4.19
+-- Host: localhost
+-- Generation Time: Nov 18, 2013 at 01:21 PM
+-- Server version: 5.5.27-log
+-- PHP Version: 5.3.23
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `benz_landing_page`
+-- Database: `benz_landingpage`
 --
 
 -- --------------------------------------------------------
@@ -41,10 +41,11 @@ CREATE TABLE IF NOT EXISTS `ads` (
 --
 
 INSERT INTO `ads` (`id`, `name`, `count`, `create_at`, `update_at`) VALUES
-(1, 'Facebook Ads', 0, '2013-11-11 00:00:00', '2013-11-11 09:11:08'),
-(2, 'GDN', 0, '2013-11-11 00:00:00', '2013-11-11 10:56:04'),
-(3, 'Adwords', 0, '2013-11-11 00:00:00', '2013-11-11 11:29:19'),
-(4, 'Mobile Ads', 0, '2013-11-11 00:00:00', '2013-11-11 11:20:30');
+(1, 'Facebook Ads', 0, '2013-11-11 00:00:00', '2013-11-18 11:23:30'),
+(2, 'GDN', 0, '2013-11-11 00:00:00', '2013-11-15 08:11:30'),
+(3, 'Adwords', 0, '2013-11-11 00:00:00', '2013-11-15 03:23:26'),
+(4, 'Mobile Ads', 0, '2013-11-11 00:00:00', '2013-11-15 03:24:16'),
+(5, 'Benz Tab', 0, '2013-11-11 00:00:00', '2013-11-18 11:23:30');
 
 -- --------------------------------------------------------
 

@@ -7,8 +7,8 @@ benz.prototype.reset = function()
 	benz.count_ads();	
 	
 	$('#ok').attr('onclick','benz.add_data_user();');
-	$('#googleplay').attr('onclick','window.open("https://play.google.com/store/apps/details?id=com.daimler.mymbfs.th.production.android", "blank");');
-    $('#appstore').attr('onclick','window.open("https://itunes.apple.com/th/app/mymbfs-thailand/id587743627?mt=8", "blank");');
+	$('#googleplay').attr('onclick','window.open("https://play.google.com/store/apps/details?id=com.daimler.mymbfs.th.production.android", "_blank");');
+    $('#appstore').attr('onclick','window.open("https://itunes.apple.com/th/app/mymbfs-thailand/id587743627?mt=8", "_blank");');
 
     $('#button-close').attr('onclick','benz.close_alert_box();');
     $('#button-close-error').attr('onclick','benz.close_alert_box_error();');
@@ -67,7 +67,7 @@ benz.prototype.add_data_user = function(){
 		
 		if(sta == 0)
 		{
-		  $('#text-box-alert-error').html('หมายเลขนี้ถูกลงทะเบียนเรียบร้อยแล้วค่ะ');
+		  $('#text-box-alert-error').html('หมายเลขนี้ได้ถูกลงทะเบียนเรียบร้อยแล้วค่ะ');
           $('#box-alert-error').show(); 
 		} else {
 		  $('#box-alert').show();   

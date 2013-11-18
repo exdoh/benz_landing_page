@@ -13,6 +13,14 @@
 			        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); 
 			        visibility: visible;
 				}
+				.text-box-alert {
+					font-size: 20px;
+					line-height: 8px;
+				}
+				#box-alert-error {
+					width: 420px;					
+					left:34%;
+				}
 				form {
 					width: 350px;
 				}
@@ -46,13 +54,14 @@
 			<div id="blursheet" style="display: none;"></div>
 			<div id="box-alert" class="box-alert" style="display: none;">
 				<div id="button-close" class="button-close"></div>
-				<div class="text-box-alert">Thanks you for Registration.</div>
-				<div class="text-box-alert">You will receive confirmmation SMS shortly.</div>
-				<div class="text-box-alert">Call for detail  02-530-9433</div>
+				<div class="text-box-alert">"ขอบคุณสำหรับการลงทะเบียน</div>
+				<div class="text-box-alert">ท่านจะได้รับ SMS เพื่อลุ้นรับสมุดโน๊ต Limited Edition</div>
+				<div class="text-box-alert">และรับสิทธิพิเศษเพิ่มเติมเมื่อทำสัญญา mySTAR</div>
+				<div class="text-box-alert">หากท่านไม่ได้รับ SMS ยืนยัน กรุณาติดต่อ 02-530-9433"</div>
 			</div>
 			<div id="box-alert-error" class="box-alert" style="display: none;">
 				<div id="button-close-error" class="button-close"></div>
-				<div id="text-box-alert-error" class="text-box-alert">Thanks you for Registration.</div>
+				<div id="text-box-alert-error" class="text-box-alert">หมายเลขนี้ได้ถูกลงทะเบียนเรียบร้อยแล้วค่ะ</div>
 			</div>
 			<div id="benz-image"></div>
 			
@@ -83,17 +92,17 @@
 						<div class="text type">รุ่น</div>
 						<select id="car_type" name="car_type">
 							<option value="" selected>กรุณาเลือก</option>
-							<option value="1">The A-Class</option>
-							<option value="2">The B-Class</option>
-							<option value="3">The CLA-Class</option>
-							<option value="4">The C-Class</option>
-							<option value="5">The SLK-Class</option>
-							<option value="6">The E-Class</option>
-							<option value="7">The CLS-Class</option>
-							<option value="8">The S-Class</option>
-							<option value="9">The Vito/The Visno</option>
-							<option value="10">Coupe</option>
-							<option value="0">Others</option>
+							<option value="1">A-Class</option>
+							<option value="2">B-Class</option>
+							<option value="3">CLA-Class</option>
+							<option value="4">C-Class</option>
+							<option value="5">SLK-Class</option>
+							<option value="6">E-Class</option>
+							<option value="7">CLS-Class</option>
+							<option value="8">S-Class</option>
+							<option value="9">Vito/Viano</option>
+							<option value="10">Coup'e</option>
+							<option value="11">Others</option>
 						</select>
 					</div>
 					
