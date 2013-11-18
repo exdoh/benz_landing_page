@@ -1,5 +1,7 @@
 <?php
 define('LIB_BASE' , '../lib/');
+header('Content-type: text/html');
+header('Access-Control-Allow-Origin: *');
 
 $url_path = curPageURL();
 
