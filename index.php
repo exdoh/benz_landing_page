@@ -6,6 +6,39 @@
 		<title>Mercedes Benz</title>
 		<link rel="shortcut icon" href="img/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--[if IE 8]>
+			<style type="text/css">
+				#blursheet {
+					background:transparent;
+			        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); 
+			        visibility: visible;
+				}
+				form {
+					width: 350px;
+				}
+				form div {
+					margin-bottom: 10px;
+				}
+				form .text {
+					font-size: 18px;
+				}
+				form select {
+					font-size: 14px;
+				}
+				form input[type="button"] {
+					font-size: 18px;
+				}
+				#age {
+					width: 110px;
+					margin-right: 106px;
+				}
+				#lower a {
+					margin-top: 54px;
+					margin-right: 34px;
+					font-size: 18px;
+				}
+			</style>
+		<![endif]-->
 	</head>
 
 	<body>
@@ -27,7 +60,7 @@
 			<div id="mid-1">
 				<form>
 					<div>
-						<div class="text">ชื่อ</div><input type="text" id="name" name="name">
+						<div class="text">ชื่อ - นามสกุล</div><input type="text" id="name" name="name">
 					</div>
 					<div>
 						<div class="text type">อายุ</div>
@@ -80,6 +113,9 @@
 		</div>
 		<!-- Add jQuery library -->
    		<script src="js/jquery-2.0.3.min.js"></script>
+		<!--[if IE 8]>
+			<script src="js/jquery-1.6.3.min.js"></script>
+   		<![endif]-->
 		<!-- Include Ajax and Javascript Benz landing page -->
 	    <script type="text/javascript">
 			 	var service_path = '<?php echo $url_path;?>' + 'localhost/benz_landing_page/controllers';

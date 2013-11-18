@@ -38,8 +38,7 @@ body, input, select, button {
 	position: absolute;
 	height: 1124px;
 	z-index: 1;
-	width: 1024px;
-	
+	width: 1024px;	
 }
 
 #box-alert {
