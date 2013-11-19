@@ -9,9 +9,10 @@
 		<!--[if IE 8]>
 			<style type="text/css">
 				#blursheet {
-					background:transparent;
+					background-image: url("img/blursheet-ie.png");
+					/*background:transparent;
 			        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); 
-			        visibility: visible;
+			        visibility: visible;*/
 				}
 				.text-box-alert {
 					font-size: 20px;
@@ -101,7 +102,7 @@
 							<option value="7">CLS-Class</option>
 							<option value="8">S-Class</option>
 							<option value="9">Vito/Viano</option>
-							<option value="10">Coup'e</option>
+							<option value="10">Coupe'</option>
 							<option value="11">Others</option>
 						</select>
 					</div>
