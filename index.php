@@ -135,8 +135,8 @@
 				    }
 				    return full_url + url;
 				}
-				alert(getUrl('controllers'));
-			 	var service_path = '<?php echo $url_path;?>' + 'localhost/benz_landing_page/controllers';
+				
+			 	var service_path = getUrl('controllers');
 			 	
 			 	var ads = <?php echo $_GET['ads'];?>;
 		</script>
