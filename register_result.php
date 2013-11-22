@@ -37,7 +37,7 @@ $db1->table = "ads";
 <table border=1>
 	<tr>
 		<td width=200 align="center">ลำดับ</td>
-		<td width=200 align="center">โฆษณษา</td>
+		<td width=200 align="center">โฆษณา</td>
 		<td width=200 align="center">จำนวนคนที่เข้าจากช่องทางนี้</td>
 	</tr>
 <?php

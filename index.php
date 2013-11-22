@@ -128,6 +128,14 @@
    		<![endif]-->
 		<!-- Include Ajax and Javascript Benz landing page -->
 	    <script type="text/javascript">
+			 	function getUrl (url) {
+				    var full_url = window.location.protocol + "//" + window.location.host + "/";
+				    if(window.location.hostname == 'localhost') {
+				         full_url += window.location.pathname.split("/")[1] + "/";
+				    }
+				    return full_url + url;
+				}
+				alert(getUrl('controllers'));
 			 	var service_path = '<?php echo $url_path;?>' + 'localhost/benz_landing_page/controllers';
 			 	
 			 	var ads = <?php echo $_GET['ads'];?>;
